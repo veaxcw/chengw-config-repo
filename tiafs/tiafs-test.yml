@@ -31,7 +31,7 @@ spring:
     timeout: 1000
 
 mybatis:
-  mapper-locations: classpath:/mapper/*Mapper.xml
+  mapper-locations: classpath:mapper/*Mapper.xml
 
 jwt:
   encrypt-secret: 4A614E645267556B58703273357638792F423F45284-2D4A6Z-6A586E32723-2B4D6-472D4BCD #秘钥
