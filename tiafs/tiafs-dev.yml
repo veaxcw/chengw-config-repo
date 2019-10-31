@@ -18,6 +18,23 @@ spring:
     url: jdbc:mysql://localhost:3306/cw_tiafs?serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
     password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    inEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x' from dual
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+
+
+
   redis:
     host: 127.0.0.1
     port: 6379
